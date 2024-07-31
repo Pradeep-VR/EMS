@@ -615,3 +615,11 @@ D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\bin\Debug\net8.0-maccatalyst\mac
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\libe_sqlite3.dylib
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\eye.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\department.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\id_card.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\designation.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\eye_closed.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\role.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll

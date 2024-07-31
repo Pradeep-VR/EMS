@@ -57,6 +57,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\attendance.png" />
 	  <None Remove="Resources\Images\department.png" />
 	  <None Remove="Resources\Images\designation.png" />
 	  <None Remove="Resources\Images\eye.png" />

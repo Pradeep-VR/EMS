@@ -62,8 +62,9 @@ public partial class SignIn : ContentPage
                         designation = Employes.designation,
                         empRole = Employes.empRole,
                     };
-                }
-                CmnVariables.Employees = 
+                    CmnVariables.Employees = SessionEmp;
+                }                
+
                 Alerts.show_SnackBar(Colors.Green, Colors.White, "Login Success.", 1);
                 await Navigation.PushAsync(new Home());
             }

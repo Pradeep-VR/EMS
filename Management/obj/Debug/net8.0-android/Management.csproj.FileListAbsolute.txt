@@ -3166,3 +3166,7 @@ C:\Users\SaraVanaN\Desktop\MCA_PROJECT\APP\EMS\Management\obj\Debug\net8.0-andro
 C:\Users\SaraVanaN\Desktop\MCA_PROJECT\APP\EMS\Management\obj\Debug\net8.0-android\android\src\crc64d6358e7bf64fbac4\SpeechToTextImplementation_SpeechRecognitionListener.java
 C:\Users\SaraVanaN\Desktop\MCA_PROJECT\APP\EMS\Management\obj\Debug\net8.0-android\android\src\com\teamliftss\ems\R.java
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\attendance.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\management.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\reports.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\request.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\taskassigning.png

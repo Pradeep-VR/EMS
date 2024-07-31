@@ -27,16 +27,16 @@ public partial class Home : ContentPage
     }
 
    
-    private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
-    {
-        var data = DatePicker.Date;
-        if (btnExit.IsVisible == true)
-        {
-            btnExit.IsVisible = false;
-        }
-        else
-        {
-            btnExit.IsVisible = true;
-        }
-    }
+    //private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
+    //{
+    //    var data = DatePicker.Date;
+    //    if (btnExit.IsVisible == true)
+    //    {
+    //        btnExit.IsVisible = false;
+    //    }
+    //    else
+    //    {
+    //        btnExit.IsVisible = true;
+    //    }
+    //}
 }

@@ -623,3 +623,8 @@ D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\mac
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\role.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\taskassigning.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\management.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\request.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\attendance.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\reports.png

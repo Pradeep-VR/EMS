@@ -64,8 +64,12 @@
 	  <None Remove="Resources\Images\eye_closed.png" />
 	  <None Remove="Resources\Images\id_card.png" />
 	  <None Remove="Resources\Images\mail.png" />
+	  <None Remove="Resources\Images\management.png" />
 	  <None Remove="Resources\Images\password.png" />
+	  <None Remove="Resources\Images\reports.png" />
+	  <None Remove="Resources\Images\request.png" />
 	  <None Remove="Resources\Images\role.png" />
+	  <None Remove="Resources\Images\taskassigning.png" />
 	  <None Remove="Resources\Images\telephone.png" />
 	  <None Remove="Resources\Images\user.png" />
 	</ItemGroup>

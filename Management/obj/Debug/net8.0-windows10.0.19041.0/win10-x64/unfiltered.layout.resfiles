@@ -46,6 +46,7 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+attendance.scale-100.png
 department.scale-100.png
 designation.scale-100.png
 dotnet_bot.scale-100.png
@@ -57,8 +58,12 @@ eye.scale-100.png
 eye_closed.scale-100.png
 id_card.scale-100.png
 mail.scale-100.png
+management.scale-100.png
 password.scale-100.png
+reports.scale-100.png
+request.scale-100.png
 role.scale-100.png
+taskassigning.scale-100.png
 telephone.scale-100.png
 user.scale-100.png
 splashSplashScreen.scale-100.png

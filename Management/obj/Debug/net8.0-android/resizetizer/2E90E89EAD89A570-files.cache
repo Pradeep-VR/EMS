@@ -5,8 +5,12 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\eye.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\eye_closed.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\id_card.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\mail.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\management.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\password.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\reports.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\request.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\role.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\taskassigning.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\telephone.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\user.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png

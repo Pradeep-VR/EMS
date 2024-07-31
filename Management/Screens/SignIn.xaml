@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Management.Screens.SignIn"
+             Shell.NavBarIsVisible="False"
+             Title="SIGNIN">
+
+    <Grid RowDefinitions="1*,8*,1*">
+        <!--Top Circles-->
+        <Frame BackgroundColor="#cfd0d8" Grid.Row="0" 
+               HorizontalOptions="EndAndExpand"
+               Padding="0" Margin="0,-80,-80,0"
+               HeightRequest="250"
+               WidthRequest="250" CornerRadius="125">
+        </Frame>
+        <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="0" 
+               HorizontalOptions="EndAndExpand"
+               Padding="0" Margin="0,-120,-120,0"
+               HeightRequest="250"   
+               WidthRequest="250" CornerRadius="125">
+        </Frame>
+
+
+        <Frame BackgroundColor="{x:StaticResource DashboardBackground}" Grid.Row="1"
+               VerticalOptions="CenterAndExpand" Margin="40,0">
+            <VerticalStackLayout Spacing="20">
+                <Label Text="SIGNIN" FontSize="28" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="35,*" ColumnSpacing="10">
+                        <Image HeightRequest="35" WidthRequest="35" Source="user.png"/>
+                        <Entry Placeholder="Employee Id" Grid.Column="1" x:Name="txtEmpId"/>
+                    </Grid>
+                </Frame>
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="35,*,35" ColumnSpacing="10">
+                        <Image HeightRequest="35" WidthRequest="35" Source="password.png"/>
+                        <Entry Placeholder="Password" IsPassword="True" Grid.Column="1" x:Name="txtPassword"/>
+                        <!--<CheckBox Grid.Column="2" x:Name="chkShowPassword" CheckedChanged="chkShowPassword_CheckedChanged"/>-->
+                        <ImageButton HeightRequest="30" WidthRequest="30" Source="eye.png" 
+                             Clicked="ImgBtnTogglePassword_Clicked" Grid.Column="2" x:Name="imgBtnTogglePassword"/>
+                    </Grid>
+                </Frame>
+                <Button Text="SIGN IN" Clicked="BtnSignIn_Clicked" FontSize="20" FontAttributes="Bold" CornerRadius="0"/>
+                <Label Text="Forgot Password?" TextColor="Gray" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Don't have Account ?" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Label Text="SignUp" FontSize="18" FontAttributes="Bold" TextColor="{x:StaticResource Primary}"/>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>                
+            </VerticalStackLayout>
+        </Frame>
+        
+        
+        <!--Bottom Circles-->
+        <Frame BackgroundColor="#cfd0d8" Grid.Row="2" 
+               VerticalOptions="EndAndExpand"
+               HorizontalOptions="StartAndExpand"
+               Padding="0" Margin="0,0,0,-180"
+               HeightRequest="250"
+               WidthRequest="250" CornerRadius="125">
+        </Frame>
+
+        <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="2" 
+               VerticalOptions="EndAndExpand"
+                HorizontalOptions="StartAndExpand"
+               Padding="0" Margin="0,0,0,-200"
+               HeightRequest="250"   
+               WidthRequest="250" CornerRadius="125">
+        </Frame>
+    </Grid>
+
+</ContentPage>

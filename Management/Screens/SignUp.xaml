@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Management.Screens.SignUp"
+             Shell.NavBarIsVisible="False"
+             Title="SignUp">
+    
+    <Grid RowDefinitions="1*,8*,1*">
+        <!--Top Circles-->
+        <Frame BackgroundColor="#cfd0d8" Grid.Row="0" 
+           HorizontalOptions="EndAndExpand"
+           Padding="0" Margin="0,-80,-80,0"
+           HeightRequest="250"
+           WidthRequest="250" CornerRadius="125">
+        </Frame>
+        <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="0" 
+           HorizontalOptions="EndAndExpand"
+           Padding="0" Margin="0,-120,-120,0"
+           HeightRequest="250"   
+           WidthRequest="250" CornerRadius="125">
+        </Frame>
+
+
+        <Frame BackgroundColor="{x:StaticResource DashboardBackground}" Grid.Row="1"
+           VerticalOptions="CenterAndExpand" Margin="40,0">
+            <VerticalStackLayout Spacing="20">
+                <Label Text="SIGNUP" FontSize="28" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="35,*" ColumnSpacing="10">
+                        <Image HeightRequest="35" WidthRequest="35" Source="id_card.png"/>
+                        <Entry Placeholder="Enter Empployee Id" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="35,*" ColumnSpacing="10">
+                        <Image HeightRequest="35" WidthRequest="35" Source="user.png"/>
+                        <Entry Placeholder="Enter Name" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="35,*" ColumnSpacing="10">
+                        <Image HeightRequest="35" WidthRequest="35" Source="department.png"/>
+                        <Entry Placeholder="Department" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="35,*" ColumnSpacing="10">
+                        <Image HeightRequest="35" WidthRequest="35" Source="designation.png"/>
+                        <Entry Placeholder="Designation" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="35,*" ColumnSpacing="10">
+                        <Image HeightRequest="35" WidthRequest="35" Source="role.png"/>
+                        <Entry Placeholder="Employee Role" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="35,*" ColumnSpacing="10">
+                        <Image HeightRequest="35" WidthRequest="35" Source="password.png"/>
+                        <Entry Placeholder="Password" IsPassword="True" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+                <Button Text="SIGN UP" FontSize="20" FontAttributes="Bold" CornerRadius="0"/>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Already have Account ?" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Label Text="SignIn" FontSize="18" FontAttributes="Bold" TextColor="{x:StaticResource Primary}"/>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
+
+
+        <!--Bottom Circles-->
+        <Frame BackgroundColor="#cfd0d8" Grid.Row="2" 
+           VerticalOptions="EndAndExpand"
+           HorizontalOptions="StartAndExpand"
+           Padding="0" Margin="0,0,0,-180"
+           HeightRequest="250"
+           WidthRequest="250" CornerRadius="125">
+        </Frame>
+
+        <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="2" 
+           VerticalOptions="EndAndExpand"
+           HorizontalOptions="StartAndExpand"
+           Padding="0" Margin="0,0,0,-200"
+           HeightRequest="250"   
+           WidthRequest="250" CornerRadius="125">
+        </Frame>
+
+
+        <!--Is Busy Loader-->
+        <ActivityIndicator IsRunning="False" IsVisible="False" HeightRequest="50"
+                           WidthRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+    </Grid>
+
+</ContentPage>

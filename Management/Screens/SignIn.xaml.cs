@@ -1,4 +1,5 @@
 using Management.Database.Servicess;
+using Management.Extras;
 using Management.Extras.CustomAddons;
 using Management.Managements;
 using Management.Models;
@@ -22,7 +23,7 @@ public partial class SignIn : ContentPage
     private async void pageload()
     {
         List<Employees> Empslist = await EmpMgnt.GetEmpService();
-        if(Empslist != null)
+        if (Empslist != null)
         {
             foreach (var emp in Empslist)
             {
@@ -38,25 +39,37 @@ public partial class SignIn : ContentPage
         //await Shell.Current.GoToAsync("//SignUp");
     }
 
-   
+
 
     private async void BtnSignIn_Clicked(object sender, EventArgs e)
     {
         string EmpId = txtEmpId.Text == null ? "" : txtEmpId.Text;
         string Passs = txtPassword.Text == null ? "" : txtPassword.Text;
 
-        if(EmpId.Length > 0 && Passs.Length > 0)
+        if (EmpId.Length > 0 && Passs.Length > 0)
         {
             var response = await this._Service.SignInAuthuntication(EmpId, Passs);
-            if(response == true)
+            if (response == true)
             {
+                var Employes = await this._Service.GetEmployeeById(EmpId);
+                if (Employes != null)
+                {
+                    var SessionEmp = new CreateEmployees()
+                    {
+                        empId = Employes.empId,
+                        firstName = Employes.firstName,
+                        department = Employes.department,
+                        designation = Employes.designation,
+                        empRole = Employes.empRole,
+                    };
+                }
+                CmnVariables.Employees = 
                 Alerts.show_SnackBar(Colors.Green, Colors.White, "Login Success.", 1);
                 await Navigation.PushAsync(new Home());
-                //await Shell.Current.GoToAsync("//Home");
             }
             else
             {
-                Alerts.show_SnackBar(Colors.Red, Colors.White, EmpId + " Not Found in System.\nContact Admin.", 2);                
+                Alerts.show_SnackBar(Colors.Red, Colors.White, EmpId + " Not Found in System.\nContact Admin.", 2);
             }
         }
         else

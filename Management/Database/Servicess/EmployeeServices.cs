@@ -7,6 +7,7 @@ namespace Management.Database.Servicess;
 internal interface IEmployeeServices
 {
     public Task<List<Employees>> GetEmployees();
+    public Task<Employees> GetEmployeeById(string strEmpId);
     public Task<bool> SignInAuthuntication(string strEmpId, string strSecretCode);
     public Task<Response> SignUpAuthentication(Employees employees);
     public Task<bool> CreateEmployee(Employees employee);
@@ -36,6 +37,12 @@ public class EmployeeServices : IEmployeeServices
     async Task<List<Employees>> IEmployeeServices.GetEmployees()
     {
         return await _dbConnection.Table<Employees>().ToListAsync();
+    }
+
+
+    async Task<Employees> IEmployeeServices.GetEmployeeById(string strEmpId)
+    {
+        return await _dbConnection.Table<Employees>().Where(x => x.empId == strEmpId && x.active == true).FirstOrDefaultAsync();
     }
 
     async Task<bool> IEmployeeServices.CreateEmployee(Employees employee)
@@ -160,4 +167,5 @@ public class EmployeeServices : IEmployeeServices
         }
     }
 
+    
 }

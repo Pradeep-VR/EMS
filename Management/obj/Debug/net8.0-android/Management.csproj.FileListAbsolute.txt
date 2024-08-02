@@ -2305,7 +2305,6 @@ D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.Numerics.dll
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.Numerics.Vectors.dll
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.ObjectModel.dll
-D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.Private.DataContractSerialization.dll
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.Private.Uri.dll
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.Private.Xml.dll
@@ -3170,3 +3169,4 @@ D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizet
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\reports.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\request.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\taskassigning.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll

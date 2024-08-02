@@ -12,7 +12,8 @@ public partial class Home : ContentPage
         {
             lblEmpId.Text = CmnVariables.Employees.empId.ToString();
             lblEmpRole.Text = CmnVariables.Employees.empRole.ToString();
-            lblEmpEmail.Text = CmnVariables.Employees.firstName.ToString() + "@teamliftss.com";
+            //lblEmpEmail.Text = CmnVariables.Employees.firstName.ToString() + "@teamliftss.com";
+            lblEmpEmail.Text = "jamesh.whesleyr@teamliftss.com";
             lblEmpDesignation.Text = CmnVariables.Employees.designation.ToString();
         }
         else

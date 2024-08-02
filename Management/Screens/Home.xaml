@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Management.Screens.Home"
-             Title="HOME" Shell.BackgroundColor="{x:StaticResource Primary}">
+             Title="HOME" Shell.BackgroundColor="{x:StaticResource Primary}"
+             Shell.TitleColor="White" >
+
     <VerticalStackLayout Padding="20" Spacing="10">
-        <Frame BackgroundColor="LightGray" Padding="10" HorizontalOptions="FillAndExpand" >
-            <!--<VerticalStackLayout Spacing="5">-->
+        <Frame BackgroundColor="AliceBlue" Padding="10" HorizontalOptions="FillAndExpand" >
             <HorizontalStackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                 <Image HeightRequest="80" WidthRequest="80" Source="user.png"></Image>
 
@@ -23,7 +24,7 @@
                 <VerticalStackLayout Spacing="5" VerticalOptions="Center">
                     <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
                         <Image Source="mail.png" HeightRequest="25" VerticalOptions="Center"></Image>
-                        <Label Text="EMAIL" x:Name="lblEmpEmail" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                        <Label Text="EMAIL" x:Name="lblEmpEmail" VerticalOptions="Center" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap"></Label>
                     </HorizontalStackLayout>
                     <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
                         <Image Source="designation.png" HeightRequest="25" VerticalOptions="Center"></Image>
@@ -31,50 +32,44 @@
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
             </HorizontalStackLayout>
-
-            <!--<Frame Padding="2" BorderColor="DarkBlue" >
-                    <DatePicker HorizontalOptions="CenterAndExpand" x:Name="DatePicker" DateSelected="DatePicker_DateSelected" ></DatePicker>
-                </Frame>-->
-            <!--</VerticalStackLayout>-->
         </Frame>
-        <Label x:Name="textLbl"></Label>
 
-        <ScrollView Orientation="Horizontal">
-            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
-                <Frame Padding="10" BackgroundColor="AliceBlue" BorderColor="AliceBlue">
+        <ScrollView Orientation="Vertical">
+            <FlexLayout VerticalOptions="Center" HorizontalOptions="Center" Wrap="Wrap">
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
                     <StackLayout Spacing="5">
                         <ImageButton Source="attendance.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
-                        <Label Text="Attendance" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text="Attendance" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
                     </StackLayout>
                 </Frame>
-                <Frame Padding="10" BackgroundColor="AliceBlue" BorderColor="AliceBlue">
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
                     <StackLayout Spacing="5">
                         <ImageButton Source="request.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
-                        <Label Text="Request" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text="Request" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
                     </StackLayout>
                 </Frame>
-                <Frame Padding="10" BackgroundColor="AliceBlue" BorderColor="AliceBlue">
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
                     <StackLayout Spacing="5">
                         <ImageButton Source="management.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
-                        <Label Text="Manage Employees" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text="Manage Employees" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
                     </StackLayout>
                 </Frame>
-                <Frame Padding="10" BackgroundColor="AliceBlue" BorderColor="AliceBlue">
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
                     <StackLayout Spacing="5">
                         <ImageButton Source="reports.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
-                        <Label Text="Reports" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text="Reports" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
                     </StackLayout>
                 </Frame>
-                <Frame Padding="10" BackgroundColor="AliceBlue" BorderColor="AliceBlue">
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
                     <StackLayout Spacing="5">
                         <ImageButton Source="taskassigning.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
-                        <Label Text="Task Assigning" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text="Task Assigning" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
                     </StackLayout>
                 </Frame>
-            </HorizontalStackLayout>
+            </FlexLayout>
 
-        </ScrollView>            
-        
-        <Button IsVisible="False" x:Name="btnExit" Text="BACK" Clicked="Button_Clicked" Margin="25"/>
+
+        </ScrollView>
+        <Button x:Name="btnExit" Text="LOGOUT" Clicked="Button_Clicked" Margin="25" CharacterSpacing="5"/>
     </VerticalStackLayout>
 </ContentPage>

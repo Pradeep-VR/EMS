@@ -3170,3 +3170,10 @@ D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizet
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\request.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\taskassigning.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\email_hw.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\job_hw.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\role_hw.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\user_hw.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\circle_menu.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\menu_bar.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-android\resizetizer\r\drawable\calender_fri.png

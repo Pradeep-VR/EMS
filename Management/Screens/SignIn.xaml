@@ -24,14 +24,14 @@
         <Frame BackgroundColor="{x:StaticResource DashboardBackground}" Grid.Row="1"
                VerticalOptions="CenterAndExpand" Margin="40,0">
             <VerticalStackLayout Spacing="20">
-                <Label Text="SIGNIN" FontSize="28" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
-                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                <Label Text="SIGN-IN" FontSize="28" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                <Frame Padding="10" BorderColor="{x:StaticResource Primary}" CornerRadius="10">
                     <Grid ColumnDefinitions="35,*" ColumnSpacing="10">
                         <Image HeightRequest="35" WidthRequest="35" Source="user.png"/>
                         <Entry Placeholder="Employee Id" Grid.Column="1" x:Name="txtEmpId"/>
                     </Grid>
                 </Frame>
-                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                <Frame Padding="10" BorderColor="{x:StaticResource Primary}" CornerRadius="10">
                     <Grid ColumnDefinitions="35,*,35" ColumnSpacing="10">
                         <Image HeightRequest="35" WidthRequest="35" Source="password.png"/>
                         <Entry Placeholder="Password" IsPassword="True" Grid.Column="1" x:Name="txtPassword"/>
@@ -40,7 +40,12 @@
                              Clicked="ImgBtnTogglePassword_Clicked" Grid.Column="2" x:Name="imgBtnTogglePassword"/>
                     </Grid>
                 </Frame>
-                <Button Text="SIGN IN" Clicked="BtnSignIn_Clicked" FontSize="20" FontAttributes="Bold" CornerRadius="0"/>
+
+                <Grid>
+                    <Button Text="SIGNIN" Clicked="BtnSignIn_Clicked" FontSize="20" FontAttributes="Bold" CornerRadius="0" CharacterSpacing="5"/>
+                    <ActivityIndicator IsRunning="False" Color="White" WidthRequest="30"></ActivityIndicator>
+                </Grid>
+                
                 <Label Text="Forgot Password?" TextColor="Gray" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
 
                 <HorizontalStackLayout Spacing="10">
@@ -49,7 +54,8 @@
                     <HorizontalStackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
                     </HorizontalStackLayout.GestureRecognizers>
-                </HorizontalStackLayout>                
+                </HorizontalStackLayout>
+                
             </VerticalStackLayout>
         </Frame>
         
@@ -70,6 +76,12 @@
                HeightRequest="250"   
                WidthRequest="250" CornerRadius="125">
         </Frame>
+        <StackLayout Grid.Row="2">
+            <Label  x:Name="lblCopyrights" Text="" FontSize="Small" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Gray" Padding="15"></Label>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGus_Tapped" NumberOfTapsRequired="2"/>
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
     </Grid>
 
 </ContentPage>

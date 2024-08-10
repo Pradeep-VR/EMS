@@ -58,20 +58,27 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\attendance.png" />
+	  <None Remove="Resources\Images\calender_fri.png" />
+	  <None Remove="Resources\Images\circle_menu.png" />
 	  <None Remove="Resources\Images\department.png" />
 	  <None Remove="Resources\Images\designation.png" />
+	  <None Remove="Resources\Images\email_hw.png" />
 	  <None Remove="Resources\Images\eye.png" />
 	  <None Remove="Resources\Images\eye_closed.png" />
 	  <None Remove="Resources\Images\id_card.png" />
+	  <None Remove="Resources\Images\job_hw.png" />
 	  <None Remove="Resources\Images\mail.png" />
 	  <None Remove="Resources\Images\management.png" />
+	  <None Remove="Resources\Images\menu_bar.png" />
 	  <None Remove="Resources\Images\password.png" />
 	  <None Remove="Resources\Images\reports.png" />
 	  <None Remove="Resources\Images\request.png" />
 	  <None Remove="Resources\Images\role.png" />
+	  <None Remove="Resources\Images\role_hw.png" />
 	  <None Remove="Resources\Images\taskassigning.png" />
 	  <None Remove="Resources\Images\telephone.png" />
 	  <None Remove="Resources\Images\user.png" />
+	  <None Remove="Resources\Images\user_hw.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -88,13 +95,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Screens\Attendance.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Screens\EditEmployee.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Screens\Home.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Screens\ManageEmployees.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Screens\Reports.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Screens\Request.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Screens\SignIn.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Screens\SignUp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Screens\TaskAssigning.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

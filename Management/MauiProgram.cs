@@ -14,7 +14,6 @@ namespace Management
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-
             //Interfaces and Services
             builder.Services.AddSingleton<IEmployeeServices, EmployeeServices>();
 

@@ -652,3 +652,10 @@ D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulato
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\request.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\management.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\attendance.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\email_hw.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\user_hw.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\role_hw.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\job_hw.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\menu_bar.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\calender_fri.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\circle_menu.png

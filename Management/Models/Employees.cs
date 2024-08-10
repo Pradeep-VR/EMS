@@ -35,6 +35,13 @@ class CreateEmployees
     public string? registeredBy { get; set; }   
 }
 
+public class Employee
+{
+    public int SerialNo { get; set; }
+    public string Name { get; set; }
+    public string EmpID { get; set; }
+    public string Email { get; set; }
+}
 /*  
  
 {

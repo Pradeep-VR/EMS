@@ -46,11 +46,41 @@ build_metadata.AdditionalFiles.ManifestResourceName = Management.Resources.Style
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[D:/LearNing/Maui/MCA_MAINPROJECT/EMS/Management/Screens/Attendance.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Management.Screens.Attendance.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\Attendance.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\Attendance.xaml
+
+[D:/LearNing/Maui/MCA_MAINPROJECT/EMS/Management/Screens/EditEmployee.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Management.Screens.EditEmployee.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\EditEmployee.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\EditEmployee.xaml
+
 [D:/LearNing/Maui/MCA_MAINPROJECT/EMS/Management/Screens/Home.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Management.Screens.Home.xaml
 build_metadata.AdditionalFiles.TargetPath = Screens\Home.xaml
 build_metadata.AdditionalFiles.RelativePath = Screens\Home.xaml
+
+[D:/LearNing/Maui/MCA_MAINPROJECT/EMS/Management/Screens/ManageEmployees.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Management.Screens.ManageEmployees.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\ManageEmployees.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\ManageEmployees.xaml
+
+[D:/LearNing/Maui/MCA_MAINPROJECT/EMS/Management/Screens/Reports.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Management.Screens.Reports.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\Reports.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\Reports.xaml
+
+[D:/LearNing/Maui/MCA_MAINPROJECT/EMS/Management/Screens/Request.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Management.Screens.Request.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\Request.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\Request.xaml
 
 [D:/LearNing/Maui/MCA_MAINPROJECT/EMS/Management/Screens/SignIn.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -63,3 +93,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Management.Screens.SignUp.xaml
 build_metadata.AdditionalFiles.TargetPath = Screens\SignUp.xaml
 build_metadata.AdditionalFiles.RelativePath = Screens\SignUp.xaml
+
+[D:/LearNing/Maui/MCA_MAINPROJECT/EMS/Management/Screens/TaskAssigning.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Management.Screens.TaskAssigning.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\TaskAssigning.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\TaskAssigning.xaml

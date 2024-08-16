@@ -659,3 +659,4 @@ D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulato
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\menu_bar.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\calender_fri.png
 D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\circle_menu.png
+D:\LearNing\Maui\MCA_MAINPROJECT\EMS\Management\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.outputs

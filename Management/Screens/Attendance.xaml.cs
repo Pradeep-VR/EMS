@@ -9,8 +9,8 @@ public partial class Attendance : ContentPage
     {
         public int SNo { get; set; }
         public DateTime DateTime { get; set; }
-        public string Attendance { get; set; }
-        public string Place { get; set; }
+        public string? Attendance { get; set; }
+        public string? Place { get; set; }
     }
     public ObservableCollection<AttendanceRecord> AttendanceRecords { get; set; }
 

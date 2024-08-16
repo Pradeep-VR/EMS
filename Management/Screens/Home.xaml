@@ -2,40 +2,74 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Management.Screens.Home"
-             Title="HOME" Shell.BackgroundColor="{x:StaticResource Primary}">
-    <VerticalStackLayout Padding="20">
-        <Frame BackgroundColor="LightGray" Padding="10" HorizontalOptions="FillAndExpand" Margin="0,10">
-            <HorizontalStackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                <Image HeightRequest="80" WidthRequest="80" Source="user.png"></Image>
+             Title="HOME" Shell.BackgroundColor="{x:StaticResource Primary}"
+             Shell.TitleColor="#EEF5FF" >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="menu_bar.png" Clicked="OnToolbarItemClicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Frame BackgroundColor="AliceBlue" Padding="10" HorizontalOptions="FillAndExpand" >
+            <HorizontalStackLayout Spacing="10" VerticalOptions="CenterAndExpand" HorizontalOptions="Start">
+                <Image HeightRequest="80" WidthRequest="80" Source="user_hw.png"></Image>
 
-                <VerticalStackLayout Spacing="5" VerticalOptions="Center">
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <Label Text="EMPID" x:Name="lblEmpId" TextColor="{x:StaticResource Primary}" FontSize="18" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                    
                     <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
-                        <Image Source="id_card.png" HeightRequest="25" VerticalOptions="Center"></Image>
-                        <Label Text="EMPID" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                        <Image Source="role_hw.png" HeightRequest="20" VerticalOptions="Center"></Image>
+                        <Label Text="ROLE" x:Name="lblEmpRole"  VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                    </HorizontalStackLayout>
+                
+                    <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
+                        <Image Source="email_hw.png" HeightRequest="20" VerticalOptions="Center"></Image>
+                        <Label Text="EMAIL" x:Name="lblEmpEmail" VerticalOptions="Center" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap"></Label>
                     </HorizontalStackLayout>
                     <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
-                        <Image Source="role.png" HeightRequest="25" VerticalOptions="Center"></Image>
-                        <Label Text="ROLE" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
-                    </HorizontalStackLayout>
-                </VerticalStackLayout>
-
-                <VerticalStackLayout Spacing="5" VerticalOptions="Center">
-                    <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
-                        <Image Source="mail.png" HeightRequest="25" VerticalOptions="Center"></Image>
-                        <Label Text="EMAIL" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
-                    </HorizontalStackLayout>
-                    <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
-                        <Image Source="designation.png" HeightRequest="25" VerticalOptions="Center"></Image>
-                        <Label Text="DESIGNATION" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                        <Image Source="job_hw.png" HeightRequest="20" VerticalOptions="Center"></Image>
+                        <Label Text="DESIGNATION" x:Name="lblEmpDesignation" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </Frame>
-        <Frame>
-            
-        </Frame>
+
+        <ScrollView Orientation="Vertical">
+            <FlexLayout VerticalOptions="Center" HorizontalOptions="Center" Wrap="Wrap">
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
+                    <StackLayout Spacing="5">
+                        <ImageButton Source="attendance.png" x:Name="icbtnAttendance" Clicked="icbtnAttendance_Clicked" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
+                        <Label Text="Attendance" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
+                    <StackLayout Spacing="5">
+                        <ImageButton Source="request.png" x:Name="icbtnRequest" Clicked="icbtnRequest_Clicked" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
+                        <Label Text="Request" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
+                    <StackLayout Spacing="5">
+                        <ImageButton Source="management.png" x:Name="icbtnManageEmployee" Clicked="icbtnManageEmployee_Clicked" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
+                        <Label Text="Manage Employees" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
+                    <StackLayout Spacing="5">
+                        <ImageButton Source="reports.png" x:Name="icbtnReports" Clicked="icbtnReports_Clicked" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
+                        <Label Text="Reports" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="10" BackgroundColor="#def7fb" BorderColor="AliceBlue" MinimumWidthRequest="100" Margin="5">
+                    <StackLayout Spacing="5">
+                        <ImageButton Source="taskassigning.png" x:Name="icbtnTaskAssigin" Clicked="icbtnTaskAssigin_Clicked" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"/>
+                        <Label Text="Task Assigning" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" LineBreakMode="WordWrap" />
+                    </StackLayout>
+                </Frame>
+            </FlexLayout>
 
 
-        <Button IsVisible="False" Text="BACK" Clicked="Button_Clicked" Margin="25"/>
+        </ScrollView>
+        <Button x:Name="btnExit" Text="LOGOUT" Clicked="Button_Clicked" Margin="25" CharacterSpacing="5"/>
+        <Label Grid.Row="2" x:Name="lblCopyrights" FontSize="Small" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Gray" Padding="15"></Label>
     </VerticalStackLayout>
 </ContentPage>

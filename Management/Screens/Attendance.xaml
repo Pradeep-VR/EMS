@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Management.Screens.Attendance"
+             Title="ATTENDANCE" Shell.BackgroundColor="{x:StaticResource Primary}"
+             Shell.TitleColor="#EEF5FF">
+    
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Frame BorderColor="Black">
+            <HorizontalStackLayout Spacing="5">
+                <Image Source="user_hw.png" HeightRequest="80" WidthRequest="80"></Image>
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <Label Text="EMPID" x:Name="lblEmpId" TextColor="{x:StaticResource Primary}" FontSize="Large" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                    <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
+                        <Image Source="role_hw.png" HeightRequest="20" VerticalOptions="Center"></Image>
+                        <Label Text="ROLE" x:Name="lblEmpRole" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
+                        <Image Source="email_hw.png" HeightRequest="20" VerticalOptions="Center"></Image>
+                        <Label Text="EMAIL" x:Name="lblEmpEmail" VerticalOptions="Center" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap"></Label>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="5">
+                        <Image Source="job_hw.png" HeightRequest="20" VerticalOptions="Center"></Image>
+                        <Label Text="DESIGNATION" x:Name="lblEmpDesignation" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame BorderColor="Black" CornerRadius="5" Padding="0" HasShadow="False">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                <DatePicker x:Name="datePicker" Format="MM/dd/yyyy" Margin="10,0,0,0" WidthRequest="100" HorizontalOptions="FillAndExpand" FontSize="Large"/>
+                <ImageButton Source="calender_fri.png" Margin="0,0,20,0" WidthRequest="25" x:Name="Icncalendar" 
+                                 HeightRequest="25" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                <HorizontalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Calendar_Tapped"/>
+                </HorizontalStackLayout.GestureRecognizers>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame BorderColor="Black" Padding="5">
+            <StackLayout Spacing="10"> 
+                <Frame Padding="5">
+                    <FlexLayout Direction="Row" JustifyContent="SpaceAround">
+                        <Frame Padding="0" MinimumWidthRequest="120" BorderColor="Transparent">
+                            <RadioButton Content="PRESENT" TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        </Frame>
+                        <Frame Padding="0"  MinimumWidthRequest="120" BorderColor="Transparent">
+                            <RadioButton Content="ABSENT" TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        </Frame>
+                    </FlexLayout>
+                </Frame>
+
+                <Frame Padding="0">
+                    <VerticalStackLayout Padding="5">
+                        <Label FontSize="Body" Text="Client Place"></Label>
+                        <Entry Background="#DDDDDD"></Entry>
+                    </VerticalStackLayout>
+                </Frame>
+                <Grid ColumnDefinitions="*,*" Padding="5">
+                    <Button Text="SAVE" CharacterSpacing="5" FontSize="Large" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100" HeightRequest="50" />
+                    <Button Text="CLEAR" CharacterSpacing="5" FontSize="Large" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100" HeightRequest="50" />
+                </Grid>
+            </StackLayout>
+        </Frame>
+
+        <Frame Padding="5" BackgroundColor="AliceBlue">
+            <StackLayout BackgroundColor="Transparent" MaximumHeightRequest="200">
+                <!-- ListView with Columns -->
+                <ListView x:Name="attendanceListView" HasUnevenRows="True"
+      SeparatorVisibility="Default" SelectionMode="None" Margin="10,20,10,0">
+                    <ListView.Header>
+                        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                            <Label Text="S.No" HorizontalOptions="StartAndExpand" Padding="10" />
+                            <Label Text="DateTime" HorizontalOptions="StartAndExpand" Padding="10" />
+                            <Label Text="Attendance" HorizontalOptions="StartAndExpand" Padding="10" />
+                            <Label Text="Place" HorizontalOptions="StartAndExpand" Padding="10" />
+                        </StackLayout>
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="10">
+                                    <Label Text="{Binding SNo}" HorizontalOptions="StartAndExpand" />
+                                    <Label Text="{Binding DateTime}" HorizontalOptions="StartAndExpand" />
+                                    <Label Text="{Binding Attendance}" HorizontalOptions="StartAndExpand" />
+                                    <Label Text="{Binding Place}" HorizontalOptions="StartAndExpand" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Frame>
+        
+        <!-- Activity Indicator in the center of the screen -->
+        <Grid>
+            <ActivityIndicator IsRunning="False" IsVisible="False" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Color="Black"/>
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>

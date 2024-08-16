@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Management.Screens.ManageEmployees"
+             Title="MANAGE EMPLOYEES" Shell.BackgroundColor="{x:StaticResource Primary}"
+             Shell.TitleColor="#EEF5FF">
+    <StackLayout Padding="10">
+
+
+        <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="20,10">
+            <!-- Dropdown for selecting Name/EmpID -->
+            <Frame Padding="2" FlexLayout.Basis="30%">
+                <StackLayout>
+                    <Picker x:Name="FilterPicker" Title="Select">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Name</x:String>
+                                <x:String>EmpID</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="2" FlexLayout.Basis="65%">
+                <StackLayout>
+                    <!-- Search Bar -->
+                    <SearchBar x:Name="SearchBar" Placeholder="Search" TextChanged="OnSearchTextChanged"/>
+                </StackLayout>
+            </Frame>
+        </FlexLayout>
+
+
+
+        <!-- ListView for displaying filtered data -->
+
+        <Frame Padding="5" BackgroundColor="AliceBlue">
+            <StackLayout BackgroundColor="Transparent" MaximumHeightRequest="200">
+                <!-- ListView with Columns -->
+                <ListView x:Name="EmployeeListView"  ItemTapped="OnEmployeeSelected" HasUnevenRows="True" SeparatorVisibility="Default" Margin="10,20,10,0">
+                    <ListView.Header>
+                        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                            <Label Text="S.No" HorizontalOptions="StartAndExpand" Padding="10" />
+                            <Label Text="NAME" HorizontalOptions="StartAndExpand" Padding="10" />
+                            <Label Text="EMP ID" HorizontalOptions="StartAndExpand" Padding="10" />
+                            <Label Text="EMAIL" HorizontalOptions="StartAndExpand" Padding="10" />
+                        </StackLayout>
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="10">
+                                    <Label Text="{Binding SerialNo}" HorizontalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding Name}" HorizontalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding EmpID}" HorizontalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding Email}" HorizontalOptions="StartAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

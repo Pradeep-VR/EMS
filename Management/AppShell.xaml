@@ -13,13 +13,35 @@
         Route="SignIn" />
 
     <ShellContent
-    Title="SIGN-UP"
-    ContentTemplate="{DataTemplate local:SignUp}"
-    Route="SignUp" />
-    
+        Title="SIGN-UP"
+        ContentTemplate="{DataTemplate local:SignUp}"
+        Route="SignUp" />
+
     <ShellContent
-    Title="HOME"
-    ContentTemplate="{DataTemplate local:Home}"
-    Route="Home" />
+        Title="HOME"
+        ContentTemplate="{DataTemplate local:Home}"
+        Route="Home" />
+
+    <ShellContent
+        Title="ATTENDANCE"
+        ContentTemplate="{DataTemplate local:Attendance}"
+        Route="Attendance" />
+
+    <ShellContent
+        Title="LEAVE REQUEST"
+        ContentTemplate="{DataTemplate local:Request}"
+        Route="Leave Request" />
+    <ShellContent
+        Title="MANAGE EMPLOYEES"
+        ContentTemplate="{DataTemplate local:ManageEmployees}"
+        Route="Manage Employees" />
+    <ShellContent
+        Title="REPORT'S"
+        ContentTemplate="{DataTemplate local:Reports}"
+        Route="Report's" />
+    <ShellContent
+        Title="TASK ASSIGNING"
+        ContentTemplate="{DataTemplate local:TaskAssigning}"
+        Route="Task Assigning" />
 
 </Shell>

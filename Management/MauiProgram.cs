@@ -8,14 +8,12 @@ namespace Management
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-            builder
-                .UseMauiApp<App>()
+            MauiAppBuilder mauiAppBuilder = builder.UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-
             //Interfaces and Services
             builder.Services.AddSingleton<IEmployeeServices, EmployeeServices>();
 

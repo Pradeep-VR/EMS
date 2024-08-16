@@ -1,24 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|c:\\users\\saravanan\\desktop\\mca_project\\app\\ems\\management\\screens\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|solutionrelative:management\\screens\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|c:\\users\\saravanan\\desktop\\mca_project\\app\\ems\\management\\screens\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|solutionrelative:management\\screens\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|c:\\users\\saravanan\\desktop\\mca_project\\app\\ems\\management\\screens\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|solutionrelative:management\\screens\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|c:\\users\\saravanan\\desktop\\mca_project\\app\\ems\\management\\screens\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|solutionrelative:management\\screens\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\LearNing\\Maui\\MCA_MAINPROJECT\\EMS\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,56 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 292,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Home.xaml",
-              "DocumentMoniker": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\Home.xaml",
-              "RelativeDocumentMoniker": "Management\\Screens\\Home.xaml",
-              "ToolTip": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\Home.xaml",
-              "RelativeToolTip": "Management\\Screens\\Home.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-31T12:05:38.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Home.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\Home.xaml.cs",
-              "RelativeDocumentMoniker": "Management\\Screens\\Home.xaml.cs",
-              "ToolTip": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\Home.xaml.cs",
-              "RelativeToolTip": "Management\\Screens\\Home.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T12:05:31.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignUp.xaml",
-              "DocumentMoniker": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\SignUp.xaml",
-              "RelativeDocumentMoniker": "Management\\Screens\\SignUp.xaml",
-              "ToolTip": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\SignUp.xaml",
-              "RelativeToolTip": "Management\\Screens\\SignUp.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-15T16:38:02.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SignUp.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\SignUp.xaml.cs",
-              "RelativeDocumentMoniker": "Management\\Screens\\SignUp.xaml.cs",
-              "ToolTip": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\SignUp.xaml.cs",
-              "RelativeToolTip": "Management\\Screens\\SignUp.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T16:45:13.612Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

@@ -13,10 +13,10 @@ public partial class SignIn : ContentPage
     Alerts Alerts = new Alerts();
 
     public SignIn()
-    {
+    {           
         InitializeComponent();
         pageload();
-        txtEmpId.Text = "TL073";
+        txtEmpId.Text = "TL0115";
         txtPassword.Text = "0115";
         lblCopyrights.Text = CmnVariables.CopyRights;
     }
@@ -28,10 +28,9 @@ public partial class SignIn : ContentPage
         {
             foreach (var emp in Empslist)
             {
-                var res = await this._Service.CreateEmployee(emp);
+                var res = await this._Service.Chk_CreateUpdate(emp);
             }
         }
-
     }
 
     private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
@@ -60,13 +59,22 @@ public partial class SignIn : ContentPage
                         firstName = Employes.firstName,
                         department = Employes.department,
                         designation = Employes.designation,
-                        empRole = Employes.empRole,
+                        empRole = Employes.empRole,                        
                     };
                     CmnVariables.Employees = SessionEmp;
+
+                    if (Passs != "Welcome@123")
+                    {
+                        Alerts.show_SnackBar(Colors.Green, Colors.White, "Login Success.", 1);
+                        await Navigation.PushAsync(new Home());
+                    }
+                    else
+                    {
+                        Alerts.show_SnackBar(Colors.Green, Colors.White, "Login Success.. Change Your Password.", 2);
+                        await Navigation.PushAsync(new ForgotPassword());
+                    }
                 }
 
-                Alerts.show_SnackBar(Colors.Green, Colors.White, "Login Success.", 1);
-                await Navigation.PushAsync(new Home());
             }
             else
             {
@@ -89,12 +97,12 @@ public partial class SignIn : ContentPage
         if (txtPassword.IsPassword)
         {
             txtPassword.IsPassword = false;
-            imgBtnTogglePassword.Source = "eye_closed.png"; // Image for hiding password
+            imgBtnTogglePassword.Source = "eye_closed.png";
         }
         else
         {
             txtPassword.IsPassword = true;
-            imgBtnTogglePassword.Source = "eye.png"; // Image for showing password
+            imgBtnTogglePassword.Source = "eye.png";
         }
     }
 
@@ -104,17 +112,15 @@ public partial class SignIn : ContentPage
 
     private async void TapGus_Tapped(object sender, EventArgs e)
     {
-        // Create Entry field with stored data
         entryField = new Entry
         {
-            Text = CmnVariables.baseUrl, // Replace with actual stored data
+            Text = CmnVariables.baseUrl,
             HorizontalOptions = LayoutOptions.FillAndExpand,
             VerticalOptions = LayoutOptions.Center,
             ZIndex = 2,
             IsEnabled = true,
         };
 
-        // Create Save button
         saveButton = new Button
         {
             Text = "Save",
@@ -123,72 +129,48 @@ public partial class SignIn : ContentPage
         };
         saveButton.Clicked += SaveButton_Clicked;
 
-        // Create Close button
         closeButton = new Button
         {
             Text = "Close",
             HorizontalOptions = LayoutOptions.Center,
             VerticalOptions = LayoutOptions.Center,
-            //Opacity = 0 // Start with 0 opacity for fade-in effect
         };
         closeButton.Clicked += CloseButton_Clicked;
 
-        // Add Entry and Buttons to the StackLayout
         StackLayout parentStackLayout = (StackLayout)sender;
 
         parentStackLayout.Children.Add(entryField);
         parentStackLayout.Children.Add(saveButton);
         parentStackLayout.Children.Add(closeButton);
-        //StackLayout childStackLayout = (StackLayout)sender;
-        //childStackLayout.Children.Add(saveButton);
-        //childStackLayout.Children.Add(closeButton);
-        //parentStackLayout.Children.Add(childStackLayout);
-
-        // Animate the opacity to fade in
-        //await entryField.FadeTo(1, 500); // Fade-in effect over 500 milliseconds
-        //await saveButton.FadeTo(1, 500); // Fade-in effect over 500 milliseconds
-        //await closeButton.FadeTo(1, 500); // Fade-in effect over 500 milliseconds
+        
         entryField.Focus();
     }
 
     private async void SaveButton_Clicked(object sender, EventArgs e)
     {
-        // Validate the entered data
         string enteredData = entryField.Text;
 
         if (string.IsNullOrWhiteSpace(enteredData))
         {
-            // Show validation error message
             await DisplayAlert("Error", "The field cannot be empty.", "OK");
             return;
         }
 
         if (!IsValidUrl(enteredData))
         {
-            // Show validation error message
             await DisplayAlert("Error", "The entered URL is not valid.", "OK");
             return;
         }
 
-        // Save the data logic here
         CmnVariables.baseUrl = enteredData;
-        // Save the enteredData to the storage or database
 
-        // Optionally, provide feedback to the user
         await DisplayAlert("Success", "Data saved successfully!", "OK");
 
-        // Optionally, close the entry field and buttons after saving
         CloseButton_Clicked(sender, e);
     }
 
     private async void CloseButton_Clicked(object sender, EventArgs e)
     {
-        // Animate the opacity to fade out
-        //await entryField.FadeTo(0, 500); // Fade-out effect over 500 milliseconds
-        //await saveButton.FadeTo(0, 500); // Fade-out effect over 500 milliseconds
-        //await closeButton.FadeTo(0, 500); // Fade-out effect over 500 milliseconds
-
-        // Remove Entry and Buttons from the StackLayout after animation
         StackLayout parentStackLayout = (StackLayout)entryField.Parent;
         parentStackLayout.Children.Remove(entryField);
         parentStackLayout.Children.Remove(saveButton);

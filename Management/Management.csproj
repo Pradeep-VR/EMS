@@ -101,6 +101,9 @@
 	  <MauiXaml Update="Screens\EditEmployee.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Screens\ForgotPassword.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Screens\Home.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

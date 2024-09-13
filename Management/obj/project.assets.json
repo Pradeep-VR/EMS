@@ -38173,24 +38173,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\prade\\.nuget\\packages\\": {},
+    "C:\\Users\\SaraVanaN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LearNing\\Maui\\MCA_MAINPROJECT\\EMS\\Management\\Management.csproj",
+      "projectUniqueName": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Management.csproj",
       "projectName": "Management",
-      "projectPath": "D:\\LearNing\\Maui\\MCA_MAINPROJECT\\EMS\\Management\\Management.csproj",
-      "packagesPath": "C:\\Users\\prade\\.nuget\\packages\\",
-      "outputPath": "D:\\LearNing\\Maui\\MCA_MAINPROJECT\\EMS\\Management\\obj\\",
+      "projectPath": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Management.csproj",
+      "packagesPath": "C:\\Users\\SaraVanaN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\prade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SaraVanaN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

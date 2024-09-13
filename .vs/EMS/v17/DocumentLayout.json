@@ -1,19 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LearNing\\Maui\\MCA_MAINPROJECT\\EMS\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|c:\\users\\saravanan\\desktop\\mca_project\\app\\ems\\management\\screens\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|solutionrelative:management\\screens\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|c:\\users\\saravanan\\desktop\\mca_project\\app\\ems\\management\\screens\\forgotpassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|solutionrelative:management\\screens\\forgotpassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|c:\\users\\saravanan\\desktop\\mca_project\\app\\ems\\management\\managements\\employeemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|solutionrelative:management\\managements\\employeemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|c:\\users\\saravanan\\desktop\\mca_project\\app\\ems\\management\\models\\employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D171347F-CE16-451D-9BE1-D7E65B0BC781}|Management\\Management.csproj|solutionrelative:management\\models\\employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 292,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ForgotPassword.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\ForgotPassword.xaml.cs",
+              "RelativeDocumentMoniker": "Management\\Screens\\ForgotPassword.xaml.cs",
+              "ToolTip": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\ForgotPassword.xaml.cs",
+              "RelativeToolTip": "Management\\Screens\\ForgotPassword.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T17:33:27.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ForgotPassword.xaml",
+              "DocumentMoniker": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\ForgotPassword.xaml",
+              "RelativeDocumentMoniker": "Management\\Screens\\ForgotPassword.xaml",
+              "ToolTip": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Screens\\ForgotPassword.xaml",
+              "RelativeToolTip": "Management\\Screens\\ForgotPassword.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-19T17:33:22.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employees.cs",
+              "DocumentMoniker": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Models\\Employees.cs",
+              "RelativeDocumentMoniker": "Management\\Models\\Employees.cs",
+              "ToolTip": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Models\\Employees.cs",
+              "RelativeToolTip": "Management\\Models\\Employees.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T17:16:36.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeManagement.cs",
+              "DocumentMoniker": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Managements\\EmployeeManagement.cs",
+              "RelativeDocumentMoniker": "Management\\Managements\\EmployeeManagement.cs",
+              "ToolTip": "C:\\Users\\SaraVanaN\\Desktop\\MCA_PROJECT\\APP\\EMS\\Management\\Managements\\EmployeeManagement.cs",
+              "RelativeToolTip": "Management\\Managements\\EmployeeManagement.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T17:09:42.608Z"
             }
           ]
         }

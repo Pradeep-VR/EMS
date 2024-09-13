@@ -13,6 +13,7 @@ internal interface IEmployeeServices
     public Task<bool> CreateEmployee(Employees employee);
     public Task<bool> UpdateEmployee(Employees employee);
     public Task<bool> DeleteEmployee(Employees employee);
+    public Task<bool> Chk_CreateUpdate(Employees employee);
 }
 
 public class EmployeeServices : IEmployeeServices
@@ -60,6 +61,20 @@ public class EmployeeServices : IEmployeeServices
 
     }
 
+    async Task<bool> IEmployeeServices.Chk_CreateUpdate(Employees employee)
+    {
+        var emp = await this._dbConnection.Table<Employees>().Where(x => x.empId == employee.empId).CountAsync();
+        if (emp > 0)
+        {            
+            int ress = await this._dbConnection.UpdateAsync(employee);
+            return ress == 0 ? true : false;
+        }
+        else
+        {
+            int res = await this._dbConnection.InsertAsync(employee);
+            return res == 0 ? true : false;            
+        }
+    }
     async Task<bool> IEmployeeServices.UpdateEmployee(Employees employee)
     {
         var emp = await this._dbConnection.Table<Employees>().Where(x => x.empId == employee.empId).CountAsync();
@@ -91,10 +106,10 @@ public class EmployeeServices : IEmployeeServices
     }
 
     async Task<bool> IEmployeeServices.SignInAuthuntication(string strEmpId, string strSecretCode)
-    {        
+    {
         var tryHash = Utils.HashPassword(strSecretCode.Trim().ToString());
-        var res = await this._dbConnection.Table<Employees>().Where(x=>x.empId == strEmpId && x.active == true && x.empViolation == false && x.deviceViolation < 3).FirstOrDefaultAsync();
-        if(res == null)
+        var res = await this._dbConnection.Table<Employees>().Where(x => x.empId == strEmpId && x.active == true && x.empViolation == false && x.deviceViolation < 3).FirstOrDefaultAsync();
+        if (res == null)
         {
             return false;
         }
@@ -131,7 +146,7 @@ public class EmployeeServices : IEmployeeServices
 
                 };
                 var emp = await this._services.CreateEmployee(RealEmp);
-                if(emp == true)
+                if (emp == true)
                 {
                     return retRes = new Response()
                     {
@@ -167,5 +182,5 @@ public class EmployeeServices : IEmployeeServices
         }
     }
 
-    
+
 }
